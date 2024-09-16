@@ -152,7 +152,7 @@ export default function Home() {
         <section className="   px-[20px]   flex flex-col-reverse  gap-4  my-10 lg:px-[150px] ">
           <div className=" flex gap-2  flex-wrap  "></div>
           <div className=" ">
-            <h2 className=" text-2xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-10 font-[impact]">
+            <h2 className=" text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-10 font-[impact]">
               Quiénes somos
             </h2>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
@@ -195,14 +195,14 @@ export default function Home() {
           </div>
         </section>
         <section className=" px-[20px]  lg:px-[150px] ">
-          <h2 className="text-2xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center">
+          <h2 className="text-3xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center">
             Nuestro Servicios
           </h2>
-          <div className=" flex  gap-3 flex-wrap  mt-14">
+          <div className=" flex    justify-center  lg:justify-start  gap-3 flex-wrap  mt-14">
             {servicios?.map((item, index) => (
               <div
                 key={index}
-                className=" relative  min-w-[300px]   rounded-lg  px-2 py-16  max-w-[380px]"
+                className=" relative  w-[300px]   md:min-w-[300px]   rounded-lg  px-2 py-16  md:max-w-[380px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
@@ -242,10 +242,10 @@ export default function Home() {
           </h4>
         </section>
         <section className=" px-[20px] lg:px-[150px] ">
-          <h2 className=" text-2xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
+          <h2 className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
             Equipo de Talento
           </h2>
-          <div className=" flex  gap-5 flex-wrap  mt-14">
+          <div className=" flex  justify-center  xl:justify-start gap-5 flex-wrap  mt-14">
             {equipo?.map((item, index) => (
               <div
                 key={index}
@@ -275,7 +275,7 @@ export default function Home() {
         </section>
         <section
           id="contacto"
-          className=" relative px-[20px] lg:px-[150px] py-4 pb-10"
+          className=" relative px-[20px] lg:px-[150px] py-10 pb-10"
         >
           <div class="custom-shape-divider-bottom-1726509634">
             <svg
@@ -291,10 +291,10 @@ export default function Home() {
             </svg>
           </div>
           <div>
-            <h2 className="  text-2xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-6 font-[impact]">
+            <h2 className="  text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-6 font-[impact]">
               Contacto
             </h2>
-            <div className=" flex  justify-center items-center flex-wrap gap-10 p-4 mb-10">
+            <div className=" flex  flex-wrap lg:flex-nowrap justify-center items-center  gap-10 p-4 mb-10">
               <div className=" shadow-lg p-10  min-h-[400px]  flex  flex-col justify-center max-h-[500px]">
                 <p className=" text-sky-950   text-lg font-semibold mb-3">
                   CTY Asesoria yConsultoria Empresarial
@@ -315,13 +315,14 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className=" w-[100%] min-h-[260px]  max-h-[300px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
+              <div className=" w-[100%] min-h-[300px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
                 <iframe
+                className=" w-[100%] min-h-[250px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px] "
                   width={"100%"}
                   height={"100%"}
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.3726100411807!2d-75.73930066116168!3d-14.033110944434963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110fd37e4eae65f%3A0xd60ef56481fbde25!2sFonavi%20San%20Martin%20IV%20Etapa%2C%2011002!5e0!3m2!1ses-419!2spe!4v1726524278790!5m2!1ses-419!2spe"
                   allowfullscreen=""
-                  loading="lazy"
+                  
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
