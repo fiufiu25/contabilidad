@@ -4,3 +4,23 @@
 body{
     background: rgb(227, 227, 227,0.5);
 }
+.custom-shape-divider-bottom-1726509634 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726509634 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1726509634 .shape-fill {
+    fill: #221F1F;
+}
