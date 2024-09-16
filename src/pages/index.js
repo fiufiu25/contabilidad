@@ -1,118 +1,213 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 
+import { Inter } from "next/font/google";
+import Image from "next/image";
+import {IoMenu} from "react-icons/io5"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  const  link=[{
+    title:"inicio",
+    path:"#inicio"
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+  },
+  {
+    title:"Quienes Somos",
+    path:"#quienesSomos"
+
+  },
+  {
+    title:"Conctacto",
+    path:"#contacto"
+
+  },
+  
+
+
+]
+const servicios=[
+  {
+    title:"AUDITORIA",
+    descripcion:{
+      title1:"AUDITORIA DE ESTADOS FINANCIEROS",
+      title2:"Procedimientos Acordados de Auditoría y/o Atestiguació",
+      title3:" Diagnóstico e Implementación de Normas Internacionales de Información Financiera"
+    },
+
+  },
+  {
+    title:"AUDITORIA",
+    descripcion:{
+      title1:"AUDITORIA DE ESTADOS FINANCIEROS",
+      title2:"Procedimientos Acordados de Auditoría y/o Atestiguació",
+      title3:" Diagnóstico e Implementación de Normas Internacionales de Información Financiera"
+    },
+    
+  },
+  {
+    title:"AUDITORIA",
+    descripcion:{
+      title1:"AUDITORIA DE ESTADOS FINANCIEROS",
+      title2:"Procedimientos Acordados de Auditoría y/o Atestiguació",
+      title3:" Diagnóstico e Implementación de Normas Internacionales de Información Financiera"
+    },
+    
+  },
+  {
+    title:"AUDITORIA",
+    descripcion:{
+      title1:"AUDITORIA DE ESTADOS FINANCIEROS",
+      title2:"Procedimientos Acordados de Auditoría y/o Atestiguació",
+      title3:" Diagnóstico e Implementación de Normas Internacionales de Información Financiera"
+    },
+    
+  },
+ 
+]
+const equipo=[
+  {
+    title:"C.P.C Javier Villegas, cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial"
+  },
+  {
+    title:"C.P.C Javier Villegas, cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial"
+  },
+  {
+    title:"C.P.C Javier Villegas, cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial"
+  },
+  {
+    title:"C.P.C Javier Villegas, cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial"
+  },
+
+]
+  return (
+    <>
+
+    <header className=" flex justify-between  items-center shadow-md px-6 py-2">
+      <div>
+        <p  className="  text-lg  text-sky-950 font-bold"> PY</p>
+      </div>
+       <nav className=" p-4">
+        <ul>
+           {link?.map(item=>(
+           
+           <li key={item.title}  className=" inline-block   px-2    " > 
+              <a className="  text-lg font-semibold  text-sky-950  p-2  border-t-4 border-b-4  border-transparent transition-all hover:border-orange-700 hover:text-orange-700  " href={item.path}>{item.title}</a>
+            </li>
+           ))}
+        </ul>
+       </nav>
+       <div className="  hidden  md:none">
+       <IoMenu size={ 30}/>
+       </div>
+    </header>
+
+      <main >
+      <div className="relative px-[200px]  h-[900px] py-20 flex  justify-center items-center">
+      {/* Contenedor de la imagen */}
+      <div className="absolute top-0 left-0 w-full h-full z-[-1] after:bg-black/80 after:absolute after:top-0 after:left-0 after:w-full after:h-full" >
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/contabilidad.jpg" // Ajusta la ruta si es necesario
+          alt="Imagen de contabilidad"
+          layout="fill" // O usa "responsive" si prefieres que se ajuste proporcionalmente
+          objectFit="cover" // Ajusta el ajuste de la imagen
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* Contenedor del contenido */}
+      <div className="relative z-10">
+        <h1 style={{ filter: 'drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.2))' }} className="text-7xl font-[impact] font-bold text-orange-600 mb-2">
+          Contáctanos para Consultas y Asesoramiento Contable
+        </h1>
+        <p className="text-2xl  text-sky-950   font-bold filter  drop-shadow-sm   mb-2" style={{ filter: 'drop-shadow(1px 2px 1px rgba(255, 255, 255, 0.3))' }}>
+          Bienvenido a [Nombre de la Empresa], tu aliado confiable en contabilidad y gestión financiera. Ofrecemos servicios profesionales para ayudarte a mantener tus finanzas organizadas y optimizadas. Descubre cómo nuestros expertos pueden ayudarte a alcanzar tus objetivos financieros con confianza.
+        </p>
+        <button className="bg-sky-950 p-4 rounded-md text-white text-xl font-semibold px-8 mt-3 shadow-sm">
+          Consultar
+        </button>
       </div>
-    </main>
+    </div>
+      
+  <section className="    flex flex-col-reverse  gap-4  my-10 px-[150px] ">
+    <div className=" flex gap-2  flex-wrap  ">
+     
+      
+      
+     
+    </div>
+    <div className=" ">
+      <h2 className=" text-5xl  text-center  font-bold  text-sky-950 mb-4 font-[impact]">Quiénes somos</h2>
+  <p className=" text-xl  text-center text-sky-950">
+  somos un aempresa con mas de 20 años de experiencia en el mercado en los servicios de auditoria, outosurcing contable tributario, administrativo y procesamiento de nominas auomatizado. Una firma con experiencia local que pone a su dispoisicion profesionales especializados , conocimiento y soporte teconologico.
+      </p>
+    </div>
+  </section>
+  <section className="px-[150px] ">
+         <h2 className=" text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">Nuestro Servicios</h2>
+       <div className=" flex  gap-3 flex-wrap  mt-14">
+       {
+        servicios?.map((item,index)=>(
+        <div key={index} className=" relative  min-w-[300px]   rounded-sm  px-2 py-6  max-w-[380px]">
+         <div className="absolute top-0 left-0 w-full h-full z-[-1]" >
+        <Image
+          src="/contabilidad.jpg" // Ajusta la ruta si es necesario
+          alt="Imagen de contabilidad"
+          layout="fill" // O usa "responsive" si prefieres que se ajuste proporcionalmente
+          objectFit="cover" // Ajusta el ajuste de la imagen
+        />
+      </div>
+    <div className="  m-4 px-5 bg-sky-950/60 py-10">
+    <p className="  text-white font-bold text-lg text-center mb-2 rounded-sm" >
+        {item.title}
+      </p>
+      <ul>
+        <li className="  text-white  font-semibold  mb-1" >{item.descripcion.title1}</li>
+        <li className="  text-white font-semibold mb-1 " >{item.descripcion.title2}</li>
+        <li className="  text-white font-semibold " >{item.descripcion.title3}</li>
+      </ul>
+      </div>
+
+        </div>
+        ))
+       }
+      
+
+      
+       </div>
+       </section>
+   <section className=" bg-sky-950   p-10 my-10">
+    <p className=" text-white text-center text-lg"> conoce como podemos ayudarte</p>
+      <h4 className="text-white text-center text-3xl font-bold ">
+        Descarga nuestro  brochure corporativo
+      </h4>
+   </section>
+   <section className="px-[150px] ">
+         <h2 className=" text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">Equipo de Talento</h2>
+       <div className=" flex  gap-3 flex-wrap  mt-14">
+       {
+        equipo?.map((item,index)=>(
+        <div key={index} className=" relative   w-[350px] h-[350px]  rounded-full overflow-hidden  px-2 py-6 flex justify-center  items-center ">
+         <div className="absolute top-0 left-0 w-full h-full z-[-1] after:bg-black/40 after:absolute after:top-0 after:left-0 after:w-full after:h-full" >
+        <Image
+          src="/contabilidad.jpg" // Ajusta la ruta si es necesario
+          alt="Imagen de contabilidad"
+          layout="fill" // O usa "responsive" si prefieres que se ajuste proporcionalmente
+          objectFit="cover" // Ajusta el ajuste de la imagen
+        />
+      </div>
+    
+    <p className=" text-white  p-6 text-sm  text-center  ">
+{item.title}
+    </p>
+     
+
+        </div>
+        ))
+       }
+      
+
+      
+       </div>
+       </section>
+      </main>
+    </>
   );
 }
