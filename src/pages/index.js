@@ -249,7 +249,7 @@ export default function Home() {
             {equipo?.map((item, index) => (
               <div
                 key={index}
-                className=" relative shadow-lg  flex justify-center items-center  flex-col  w-[350px]  h-[480px] rounded-md overflow-hidden  px-4 py-6 "
+                className=" relative shadow-lg  flex justify-center items-center  flex-col  w-[350px]  h-[600px] rounded-md overflow-hidden  px-4 py-6 "
               >
                 <div className=" bg-sky-950  w-full h-[330px] rounded-full  absolute  -top-[40%] " />
 
