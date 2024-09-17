@@ -198,7 +198,7 @@ export default function Home() {
           <h2 className="text-3xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center">
             Nuestro Servicios
           </h2>
-          <div className=" flex    justify-center  lg:justify-start  gap-3 flex-wrap  mt-14">
+          <div className=" flex    justify-center   gap-5 flex-wrap  mt-14">
             {servicios?.map((item, index) => (
               <div
                 key={index}
@@ -217,13 +217,13 @@ export default function Home() {
                     {item.title}
                   </p>
                   <ul>
-                    <li className=" text-sm  lg:text-base text-white  font-semibold  mb-1">
+                    <li className=" text-sm  lg:text-base text-white  font-semibold  mb-1 list-disc">
                       {item.descripcion.title1}
                     </li>
-                    <li className=" text-sm lg:text-base text-white font-semibold mb-1 ">
+                    <li className=" text-sm lg:text-base text-white font-semibold mb-1 list-disc ">
                       {item.descripcion.title2}
                     </li>
-                    <li className=" text-sm lg:text-base text-white font-semibold ">
+                    <li className=" text-sm lg:text-base text-white font-semibold list-disc ">
                       {item.descripcion.title3}
                     </li>
                   </ul>
