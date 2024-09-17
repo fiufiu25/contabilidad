@@ -243,13 +243,13 @@ export default function Home() {
         </section>
         <section className=" px-[20px] lg:px-[150px] ">
           <h2 className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
-            Equipo de Talento
+           profesionales
           </h2>
           <div className=" flex  justify-center   gap-5 flex-wrap  mt-14">
             {equipo?.map((item, index) => (
               <div
                 key={index}
-                className=" relative shadow-lg  flex justify-center items-center  flex-col  w-[350px]  rounded-md overflow-hidden  px-4 py-6 "
+                className=" relative shadow-lg  flex justify-center items-center  flex-col  w-[350px]  h-[480px] rounded-md overflow-hidden  px-4 py-6 "
               >
                 <div className=" bg-sky-950  w-full h-[330px] rounded-full  absolute  -top-[40%] " />
 
