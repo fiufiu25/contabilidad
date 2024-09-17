@@ -11,7 +11,7 @@ export default function NavResponsive({link,open,linkHangleClick}) {
             {link?.map((item) => (
               <li key={item.title} className="    px-2 py-3    ">
                 <a
-                onClick={()=>linkHangleClick}
+                onClick={()=>linkHangleClick()}
                   className="  text-lg font-semibold  text-white  p-2  border-t-4 border-b-4  border-transparent transition-all hover:border-orange-700 hover:text-orange-700  "
                   href={item.path}
                 >

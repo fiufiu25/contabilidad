@@ -4,7 +4,7 @@ import NavResponsive from './navResponsive';
 import UxMenu from './UxMenu';
 
 export default function UxNav() {
-    const [open , setOpen]=useState(true)
+    const [open , setOpen]=useState(false)
     const  navRef=useRef(null)
 
     useEffect(() => {
@@ -46,8 +46,9 @@ export default function UxNav() {
       ];
       const  linkHangleClick=()=>{
         setOpen(false)
+       
       }
-      
+      console.log(open)
   return (
 
     <>
