@@ -22,9 +22,14 @@ export default function Home() {
       path: "#quienesSomos",
     },
     {
+      title: "Profesionales",
+      path: "#contacto",
+    },
+    {
       title: "Conctacto",
       path: "#contacto",
     },
+   
   ];
   const servicios = [
     {
@@ -252,7 +257,7 @@ export default function Home() {
                 key={index}
                 className=" relative shadow-lg  flex   flex-col  w-[350px]  h-[480px] rounded-md overflow-hidden  px-4 py-6 "
               >
-                <div className=" bg-sky-950  w-full h-[330px] rounded-full  absolute  -top-[40%] " />
+                <div className=" bg-sky-950  w-full h-[330px] rounded-full  absolute left-0   -top-[40%] " />
 
                 <div className=" w-full text-center  flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden">
                   <Image
