@@ -5,6 +5,7 @@ import {
   IoCellular,
   IoLocate,
   IoLocation,
+  IoLogoWhatsapp,
   IoMenu,
 } from "react-icons/io5";
 import UxFooter from "./components/uxFooter";
@@ -23,7 +24,11 @@ export default function Home() {
     },
     {
       title: "Profesionales",
-      path: "#contacto",
+      path: "#profesionales",
+    },
+    {
+      title: "Nuestro Servicios",
+      path: "#nuestroServicios",
     },
     {
       title: "Conctacto",
@@ -350,6 +355,9 @@ export default function Home() {
           </p>
         </div>
       </footer>
+      <div className=" fixed   justify-center flex items-center w-[80px] h-[80px] rounded-full  bottom-6 right-3 bg-white shadow-lg">
+        <IoLogoWhatsapp size={60}  className=" text-green-600"/>
+      </div>
     </>
   );
 }
