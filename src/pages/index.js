@@ -202,7 +202,7 @@ export default function Home() {
             {servicios?.map((item, index) => (
               <div
                 key={index}
-                className=" relative  w-[300px]   md:min-w-[340px]   rounded-lg  px-2 py-16  md:max-w-[380px]"
+                className=" relative  w-[300px]   md:min-w-[380px]   rounded-lg  px-2 py-16  md:max-w-[500px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
