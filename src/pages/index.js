@@ -23,13 +23,14 @@ export default function Home() {
       path: "#quienesSomos",
     },
     {
-      title: "Profesionales",
-      path: "#profesionales",
-    },
-    {
       title: "Nuestro Servicios",
       path: "#nuestroServicios",
     },
+    {
+      title: "Profesionales",
+      path: "#profesionales",
+    },
+    
     {
       title: "Conctacto",
       path: "#contacto",
