@@ -202,7 +202,7 @@ export default function Home() {
             {servicios?.map((item, index) => (
               <div
                 key={index}
-                className=" relative  w-[300px]   md:min-w-[300px]   rounded-lg  px-2 py-16  md:max-w-[380px]"
+                className=" relative  w-[300px]   md:min-w-[340px]   rounded-lg  px-2 py-16  md:max-w-[380px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
@@ -245,7 +245,7 @@ export default function Home() {
           <h2 className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
             Equipo de Talento
           </h2>
-          <div className=" flex  justify-center  xl:justify-start gap-5 flex-wrap  mt-14">
+          <div className=" flex  justify-center   gap-5 flex-wrap  mt-14">
             {equipo?.map((item, index) => (
               <div
                 key={index}
