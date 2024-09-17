@@ -153,16 +153,17 @@ export default function Home() {
           <div className=" flex gap-2  flex-wrap  "></div>
           <div className=" ">
             <h2 className=" text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-10 font-[impact]">
-              Quiénes somos
+              ¿Quiénes somos?
             </h2>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
               <div className=" w-full    lg:w-[40%] ">
                 <p className=" text-2xl   text-black">
-                  Una firma con experiencia local que pone a su dispoisicion
+                  {/* Una firma con experiencia local que pone a su dispoisicion
                   profesionales especializados contando con mas de 20 años de
-                  experiencia en el mercado en los servicios como :
+                  experiencia en el mercado en los servicios como : */}
+                  somos un aempresa con mas de 20 años de experiencia en el mercado en los servicios de auditoria, outosurcing contable tributario, administrativo y procesamiento de nominas auomatizado. Una firma con experiencia local que pone a su dispoisicion profesionales especializados , conocimiento y soporte teconologico.
                 </p>
-                <ul className=" p-2">
+                {/* <ul className=" p-2">
                   <li className=" p-1 text-lg text-black   list-disc">
                     auditoria
                   </li>
@@ -181,7 +182,7 @@ export default function Home() {
                   <li className=" p-1 text-lg text-black list-disc">
                     soporte teconologico
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <div className="  w-full lg:w-[40%] h-[400px] relative rounded-lg overflow-hidden">
                 <Image
@@ -249,16 +250,20 @@ export default function Home() {
             {equipo?.map((item, index) => (
               <div
                 key={index}
-                className=" relative shadow-lg  flex  justify-center  flex-col  w-[350px]  h-[1000px] rounded-md overflow-hidden  px-4 py-6 "
+                className=" relative shadow-lg  flex   flex-col  w-[350px]  h-[480px] rounded-md overflow-hidden  px-4 py-6 "
               >
                 <div className=" bg-sky-950  w-full h-[330px] rounded-full  absolute  -top-[40%] " />
 
-                <div className="  w-[160px] h-[160px] relative  p-1 rounded-full overflow-hidden bg-red-100">
+                <div className=" w-full text-center  flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden">
                   <Image
                     src="/contabilidad.jpg" // Ajusta la ruta si es necesario
                     alt="Imagen de contabilidad"
-                    layout="fill" // O usa "responsive" si prefieres que se ajuste proporcionalmente
-                    objectFit="cover" // Ajusta el ajuste de la imagen
+                    // O usa "responsive" si prefieres que se ajuste proporcionalmente
+                   
+                     // Ajusta el ajuste de la imagen
+                     width={160}
+                     height={160}
+                     className=" rounded-full w-[160px] h-[160px]"
                   />
                 </div>
 
