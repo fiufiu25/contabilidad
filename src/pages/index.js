@@ -305,8 +305,8 @@ export default function Home() {
           </p>
         </div>
       </footer>
-      <div className=" fixed   justify-center flex items-center w-[40px] h-[40px] rounded-full  bottom-10 right-4 bg-white shadow-lg">
-        <IoLogoWhatsapp size={30} className=" text-green-600" />
+      <div className=" fixed   justify-center flex items-center cursor-pointer w-[60px] h-[60px] rounded-full  bottom-10 right-4 bg-white shadow-lg">
+        <IoLogoWhatsapp size={50} className=" text-green-600" />
       </div>
     </>
   );
