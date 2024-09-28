@@ -177,7 +177,7 @@ export default function Home() {
               <div
                 data-aos-duration="500"
                 data-aos-delay="300"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in-right"
                 className="   w-full lg:w-[40%] h-[400px] relative rounded-lg overflow-hidden"
               >
                 <Image
@@ -313,7 +313,7 @@ export default function Home() {
               Contacto
             </h2>
             <div className=" flex  flex-wrap lg:flex-nowrap justify-center items-center  gap-10 p-4 mb-10">
-              <div data-aos="zoom-out-left" className=" shadow-lg p-10  min-h-[400px]  flex  flex-col justify-center max-h-[500px]">
+              <div data-aos="zoom-out-right" className="shadow-lg p-10  min-h-[400px]  flex  flex-col justify-center max-h-[500px]">
                 <p className=" text-sky-950   text-lg font-semibold mb-3">
                   CTY Asesoria yConsultoria Empresarial
                 </p>
@@ -336,7 +336,7 @@ export default function Home() {
                   Contactar
                 </button>
               </div>
-              <div data-aos="zoom-out-left" className=" w-[100%] min-h-[300px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
+              <div data-aos="zoom-out-right" className=" w-[100%] min-h-[300px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
                 <iframe
                   className=" w-[100%] min-h-[250px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px] "
                   width={"100%"}
