@@ -2,19 +2,20 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import { IoCall, IoLocation, IoLogoWhatsapp } from "react-icons/io5";
 import UxFooter from "./components/uxFooter";
-import NavResponsive from "./components/navResponsive";
-import UxMenu from "./components/UxMenu";
+import cristian from "../../public/cristian.jpg";
+import javier from "../../public/javier.jpg";
+import evelin from "../../public/evelin.jpg";
 import UxNav from "./components/uxNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
-  
+
   const servicios = [
     {
       title: "AUDITORIA",
       descripcion: {
-        title1: "AUDITORIA DE ESTADOS FINANCIEROS",
+        title1: "Auditoría de Estados Financieros",
         title2: "Procedimientos Acordados de Auditoría y/o Atestiguació",
         title3:
           " Diagnóstico e Implementación de Normas Internacionales de Información Financiera",
@@ -23,26 +24,26 @@ export default function Home() {
     {
       title: "IMPUESTOS Y LEGAL",
       descripcion: {
-        title1: "CONSULTORIA TRIBUTARIA",
+        title1: "Consultoría Tributaria",
         title2: "Fiscalizaciones y Defensa Tributaria",
-        title3: "PLANEAMIENTO TRIBUTARIO",
+        title3: "Planeamiento Tributario",
       },
     },
     {
-      title: "CONSULTORIA",
+      title: "CONSULTORÍA",
       descripcion: {
-        title1: " CONSULTORIA DE NEGOCIOS",
-        title2: "CONSULTORIA DE PROCESOS",
-        title3: "  CONSULTORIA FINANCIERA Y VALORIZACIONES",
+        title1: " Consultoría de Negocios",
+        title2: "Consultoría de Procesos",
+        title3: "Consultoría Financiera y Valorizaciones",
       },
     },
     {
       title: "OUTSOURCING CONTABLE Y SERVICIOS DE NEGOCIOS",
       descripcion: {
-        title1: "OUTSOURCING CONTABLE DIGITAL",
+        title1: "Outsourcing Contable Digital",
         title2:
           " Administración y Tesorería, Domicilio Fiscal y Representación Legal",
-        title3: "INVENTARIOS FISICOS",
+        title3: "Inventarios Físicos",
       },
     },
   ];
@@ -50,27 +51,33 @@ export default function Home() {
     {
       nombre: "C.P.C Javier Villegas ",
       descripcion:
-        "Cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial",
+        "cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
+      img: javier,
     },
+
     {
       nombre: "Victor Aliaga Zenteno",
-      descripcion:
-        "Contador público Colegiado de la Universidad Nacional Mayor de San Marcos ,Auditor independiente, Estudios de Maestria en Gestión Publica, ex funcionario  de la Controlaria General de la República y SUNAT, Auditor Financiero y  Gubernamental",
+       descripcion:
+        "Contador Público Colegiado de la Universidad Nacional Mayor de San Marcos, Auditor Independiente, Estudios de Maestría en Gestión Pública, exfuncionario de la Contraloría General de la República y SUNTA, Auditor Financiero y Gubernamental.",
+  img:javier
+
     },
     {
       nombre: "Christian Misael Torres Yupanqui ",
       descripcion:
-        "Supervisor de Auditoria Licenciado de Contabilidad de la UNAC , ex funcionario de la SUNAT  contador  y audito, docente universitario de NICs y NIFs, Maestria Finanzas",
+        "Supervisor de Auditoría Licenciado de Contabilidad de la UNAC, ex funcionario de la SUNAT contador y auditor, docente universitario de NICs y NIIFs, Maestría en Finanzas.",
+        img:cristian
     },
     {
-      nombre: "C.P.C Javier Villegas ",
+      nombre: "C.P.C Evelyn Flor Misari Hilifoncio",
       descripcion:
-        "Cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia(ESAN) . Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial",
+        "Contadora pública titulada de la Universidad Privada Nobert Wiener y perteneciente al tercio superior. Experiencia laboral en empresas corporativas el área de administración y contabilidad.",
+        img:evelin
     },
   ];
   return (
     <>
-      <UxNav/>
+      <UxNav />
 
       <main>
         <section
@@ -91,7 +98,7 @@ export default function Home() {
             <h1 className=" text-2xl   md:text-5xl    lg:text-7xl font-[impact] font-bold text-white mb-4">
               Contáctanos para Consultas y Asesoramiento Contable
             </h1>
-            <p className=" hidden md:block text-sm  md:text-lg lg:text-xl  text-white   font-bold filter  drop-shadow-sm   mb-2">
+            <p className=" hidden text-sm  md:text-lg lg:text-xl  text-white   font-bold filter  drop-shadow-sm   mb-2">
               Bienvenido a [Nombre de la Empresa], tu aliado confiable en
               contabilidad y gestión financiera. Ofrecemos servicios
               profesionales para ayudarte a mantener tus finanzas organizadas y
@@ -108,14 +115,14 @@ export default function Home() {
           id="quienesSomos"
           className="   px-[20px]  py-4  flex flex-col-reverse  gap-4  my-10 lg:px-[150px] "
         >
-          <div className=" flex gap-2  flex-wrap  "></div>
+          <div className=" flex gap-2   flex-wrap  "></div>
           <div className=" ">
-            <h2 className=" text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-10 font-[impact]">
+            <h2 className="mb-5 text-3xl lg:text-5xl   text-center  font-bold  text-sky-950 md:mb-10 font-[impact]">
               ¿Quiénes somos?
             </h2>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
               <div className=" w-full    lg:w-[40%] ">
-                <p className=" text-2xl   text-black">
+                <p className=" text-lg mb-4 md:mb-0 md:text-2xl  md:text-justify   text-black">
                   {/* Una firma con experiencia local que pone a su dispoisicion
                   profesionales especializados contando con mas de 20 años de
                   experiencia en el mercado en los servicios como : */}
@@ -165,11 +172,11 @@ export default function Home() {
           <h2 className="text-3xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center">
             Nuestro Servicios
           </h2>
-          <div className=" flex    justify-center   gap-5 flex-wrap  mt-14">
+          <div className=" flex    justify-center    2xl:flex-nowrap  gap-5 flex-wrap  mt-14">
             {servicios?.map((item, index) => (
               <div
                 key={index}
-                className=" relative  w-[300px]   md:min-w-[380px]   rounded-lg  px-2 py-16  md:max-w-[500px]"
+                className=" relative  w-[300px]   md:min-w-[380px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
@@ -179,7 +186,7 @@ export default function Home() {
                     objectFit="cover" // Ajusta el ajuste de la imagen
                   />
                 </div>
-                <div className="  m-4 px-5 bg-sky-950/60 py-10">
+                <div className="  m-4 px-5 bg-sky-950/80 rounded py-10">
                   <p className="  text-base text-white font-bold  lg:text-lg text-center mb-2 rounded-sm">
                     {item.title}
                   </p>
@@ -204,7 +211,7 @@ export default function Home() {
           <h2 className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
             profesionales
           </h2>
-          <div className=" flex  justify-center   gap-5 flex-wrap  mt-14">
+          <div className=" flex  justify-center   gap-5  flex-wrap  2xl:flex-nowrap mt-14">
             {equipo?.map((item, index) => (
               <div
                 key={index}
@@ -214,7 +221,7 @@ export default function Home() {
 
                 <div className=" w-full text-center  flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden">
                   <Image
-                    src="/contabilidad.jpg" // Ajusta la ruta si es necesario
+                    src={item.img} // Ajusta la ruta si es necesario
                     alt="Imagen de contabilidad"
                     // O usa "responsive" si prefieres que se ajuste proporcionalmente
 
@@ -238,7 +245,7 @@ export default function Home() {
         </section>
         <section
           id="contacto"
-          className=" relative py-4 px-[20px] lg:px-[150px] py-10 pb-10"
+          className=" relative py-4 px-[20px] lg:px-[150px] md:py-10 pb-10"
         >
           <div class="custom-shape-divider-bottom-1726509634">
             <svg
