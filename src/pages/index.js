@@ -6,6 +6,7 @@ import cristian from "../../public/cristian.jpg";
 import javier from "../../public/javier.jpg";
 import evelin from "../../public/evelin.jpg";
 import UxNav from "./components/uxNav";
+import contador from "../../public/contador.webp";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -56,23 +57,22 @@ export default function Home() {
     },
 
     {
-      nombre: "Victor Aliaga Zenteno",
-       descripcion:
+      nombre: " C.P.C Victor Aliaga Zenteno",
+      descripcion:
         "Contador Público Colegiado de la Universidad Nacional Mayor de San Marcos, Auditor Independiente, Estudios de Maestría en Gestión Pública, exfuncionario de la Contraloría General de la República y SUNTA, Auditor Financiero y Gubernamental.",
-  img:javier
-
+      img: contador,
     },
     {
-      nombre: "Christian Misael Torres Yupanqui ",
+      nombre: "C.P.C Christian Misael Torres Yupanqui ",
       descripcion:
         "Supervisor de Auditoría Licenciado de Contabilidad de la UNAC, ex funcionario de la SUNAT contador y auditor, docente universitario de NICs y NIIFs, Maestría en Finanzas.",
-        img:cristian
+      img: cristian,
     },
     {
       nombre: "C.P.C Evelyn Flor Misari Hilifoncio",
       descripcion:
         "Contadora pública titulada de la Universidad Privada Nobert Wiener y perteneciente al tercio superior. Experiencia laboral en empresas corporativas el área de administración y contabilidad.",
-        img:evelin
+      img: evelin,
     },
   ];
   return (
@@ -95,7 +95,12 @@ export default function Home() {
 
           {/* Contenedor del contenido */}
           <div className="relative z-10">
-            <h1 className=" text-2xl   md:text-5xl    lg:text-7xl font-[impact] font-bold text-white mb-4">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1500"
+              className="  text-2xl   md:text-5xl    lg:text-7xl font-[impact] font-bold text-white mb-4"
+            >
               Contáctanos para Consultas y Asesoramiento Contable
             </h1>
             <p className=" hidden text-sm  md:text-lg lg:text-xl  text-white   font-bold filter  drop-shadow-sm   mb-2">
@@ -105,7 +110,12 @@ export default function Home() {
               optimizadas. Descubre cómo nuestros expertos pueden ayudarte a
               alcanzar tus objetivos financieros con confianza.
             </p>
-            <button className="bg-sky-800 text-lg p-4 rounded-md text-white lg:text-xl font-semibold px-8 mt-3 shadow-sm">
+            <button
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1500"
+              className="bg-sky-800 text-lg p-4 rounded-md text-white lg:text-xl font-semibold px-8 mt-3 shadow-sm"
+            >
               Consultar
             </button>
           </div>
@@ -117,12 +127,22 @@ export default function Home() {
         >
           <div className=" flex gap-2   flex-wrap  "></div>
           <div className=" ">
-            <h2 className="mb-5 text-3xl lg:text-5xl   text-center  font-bold  text-sky-950 md:mb-10 font-[impact]">
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              className="mb-5 text-3xl lg:text-5xl   text-center  font-bold  text-sky-950 md:mb-10 font-[impact]"
+            >
               ¿Quiénes somos?
             </h2>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
               <div className=" w-full    lg:w-[40%] ">
-                <p className=" text-lg mb-4 md:mb-0 md:text-2xl  md:text-justify   text-black">
+                <p
+                  data-aos-duration="500"
+                  data-aos="zoom-in "
+                  data-aos-delay="300"
+                  className=" text-lg mb-4 md:mb-0 md:text-2xl  md:text-justify   text-black"
+                >
                   {/* Una firma con experiencia local que pone a su dispoisicion
                   profesionales especializados contando con mas de 20 años de
                   experiencia en el mercado en los servicios como : */}
@@ -154,7 +174,12 @@ export default function Home() {
                   </li>
                 </ul> */}
               </div>
-              <div className="  w-full lg:w-[40%] h-[400px] relative rounded-lg overflow-hidden">
+              <div
+                data-aos-duration="500"
+                data-aos-delay="300"
+                data-aos="zoom-in-left"
+                className="   w-full lg:w-[40%] h-[400px] relative rounded-lg overflow-hidden"
+              >
                 <Image
                   src="/contabilidad.jpg" // Ajusta la ruta si es necesario
                   alt="Imagen de contabilidad"
@@ -169,13 +194,22 @@ export default function Home() {
           id="nuestroServicios"
           className=" px-[20px] py-4  lg:px-[150px] "
         >
-          <h2 className="text-3xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            className="text-3xl lg:text-5xl  font-bold  text-sky-950 mb-2 font-[impact] text-center"
+          >
             Nuestro Servicios
           </h2>
           <div className=" flex    justify-center    2xl:flex-nowrap  gap-5 flex-wrap  mt-14">
             {servicios?.map((item, index) => (
               <div
                 key={index}
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 className=" relative  w-[300px]   md:min-w-[380px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
@@ -208,12 +242,21 @@ export default function Home() {
         </section>
         <section className=" bg-sky-950   p-10 my-10"></section>
         <section className=" py-4 px-[20px] lg:px-[150px] " id="profesionales">
-          <h2 className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            className=" text-3xl lg:text-5xl   font-bold  text-sky-950 mb-2 font-[impact] text-center"
+          >
             profesionales
           </h2>
           <div className=" flex  justify-center   gap-5  flex-wrap  2xl:flex-nowrap mt-14">
             {equipo?.map((item, index) => (
               <div
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 key={index}
                 className=" relative shadow-lg  flex   flex-col  w-[350px]  h-[480px] rounded-md overflow-hidden  px-4 py-6 "
               >
@@ -261,11 +304,16 @@ export default function Home() {
             </svg>
           </div>
           <div>
-            <h2 className="  text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-4 font-[impact]">
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              className="  text-3xl lg:text-5xl  text-center  font-bold  text-sky-950 mb-4 font-[impact]"
+            >
               Contacto
             </h2>
             <div className=" flex  flex-wrap lg:flex-nowrap justify-center items-center  gap-10 p-4 mb-10">
-              <div className=" shadow-lg p-10  min-h-[400px]  flex  flex-col justify-center max-h-[500px]">
+              <div data-aos="zoom-out-left" className=" shadow-lg p-10  min-h-[400px]  flex  flex-col justify-center max-h-[500px]">
                 <p className=" text-sky-950   text-lg font-semibold mb-3">
                   CTY Asesoria yConsultoria Empresarial
                 </p>
@@ -288,7 +336,7 @@ export default function Home() {
                   Contactar
                 </button>
               </div>
-              <div className=" w-[100%] min-h-[300px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
+              <div data-aos="zoom-out-left" className=" w-[100%] min-h-[300px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px]">
                 <iframe
                   className=" w-[100%] min-h-[250px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[400px] "
                   width={"100%"}
