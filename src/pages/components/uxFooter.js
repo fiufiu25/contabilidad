@@ -1,16 +1,14 @@
+import Image from 'next/image'
 import React from 'react'
 import { IoCall, IoLocation, IoLogoFacebook, IoLogoInstagram, IoLogoTiktok } from 'react-icons/io5'
-
+import logo from "../../../public/logo.jpg"
 export default function UxFooter() {
     // Obtener el año actual
   return (
   <>
     <div  className=' flex  text-center   md:justify-around  md:items-start gap-4 flex-wrap' >
       <div className=' relative flex justify-center items-center  w-full md:w-auto '>
-      <p className="  text-2xl  text-white font-bold">
-           
-           Bonnie<span className=" text-[#58ecff]">Dev</span>
-         </p>
+   <Image src={logo} width={100} hieght={100} className=" rounded-lg"/>
       </div>
       <div className='  w-full md:w-auto'>
         <h5 className='   text-white font-bold mb-2 text-xl'>

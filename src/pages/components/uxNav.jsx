@@ -2,7 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import NavResponsive from './navResponsive';
 import UxMenu from './UxMenu';
-
+import Image from 'next/image';
+import logo from "../../../public/logo.jpg"
 export default function UxNav() {
     const [open , setOpen]=useState(false)
     const  navRef=useRef(null)
@@ -52,18 +53,16 @@ export default function UxNav() {
   return (
 
     <>
-    <header  ref={navRef} className=" py-5 flex justify-between  items-center bg-black shadow-md px-6 md:py-2">
+    <header  ref={navRef} className=" py-5 flex justify-between  items-center shadow-md px-6 md:py-2">
         <div>
-          <p className="  text-xl  text-white font-bold">
-            Bonnie<span className=" text-[#58ecff]">Dev</span>
-          </p>
+          <Image src={logo} width={80} height={80}  className={" rounded-full"} />
         </div>
         <nav className=" hidden md:block p-4">
     <ul>
       {link?.map((item) => (
         <li key={item.title} className=" inline-block   px-1    ">
           <a
-            className="  text-base font-semibold  text-white  p-2  border-t-4 border-b-4  border-transparent transition-all hover:border-orange-700 hover:text-orange-700  "
+            className="  text-base font-semibold  text-black  p-2  border-t-4 border-b-4  border-transparent transition-all hover:border-orange-700 hover:text-orange-700  "
             href={item.path}
           >
             {item.title}
