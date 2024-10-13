@@ -55,7 +55,7 @@ export default function UxNav() {
     <>
     <header  ref={navRef} className=" py-5 flex justify-between  items-center shadow-md px-6 md:py-2">
         <div>
-          <Image src={logo} width={80} height={80}  className={" rounded-full"} />
+          <Image src={logo} width={80} height={80}  className={" rounded-lg"} />
         </div>
         <nav className=" hidden md:block p-4">
     <ul>
