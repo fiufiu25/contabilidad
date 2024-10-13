@@ -151,7 +151,7 @@ export default function Home() {
                   data-aos-delay="300"
                   className=" text-lg mb-4 md:mb-0 md:text-xl  md:text-justify   text-white"
                 >
-                  somos un aempresa con mas de 20 años de experiencia en el
+                  somos una empresa con mas de 20 años de experiencia en el
                   mercado en los servicios de auditoria, outosurcing contable
                   tributario, administrativo y procesamiento de nominas
                   auomatizado. Una firma con experiencia local que pone a su

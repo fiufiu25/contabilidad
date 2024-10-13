@@ -15,7 +15,7 @@ export default function UxFooter() {
             Sobre Nosotros
         </h5>
         <p className='  text-white w-full   md:max-w-[300px]  text-center'>
-        somos un aempresa con mas de 20 años de experiencia en el mercado en los servicios de auditoria
+        somos una empresa con mas de 20 años de experiencia en el mercado en los servicios de auditoria
         </p>
       </div>
       <div className='  w-full md:w-auto'>
