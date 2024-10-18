@@ -23,13 +23,13 @@ export default function UxFooter() {
         <div className=" flex  items-center justify-center   md:justify-start   mb-2 ">
                   <IoLocation size={20} color="#EF6077" />
                   <p className=" text-white  ">
-                    Direccion: <small> av viena 332 - tinguiña</small>
+                    Direccion: <small> Av. viena 332 - tinguiña</small>
                   </p>
                 </div>
                 <div className=" flex  justify-center   md:justify-start items-center mb-1 ">
                   <IoCall size={20} color="#EF6077" />
                   <p className=" text-white  ">
-                    teléfono: <small>953442242</small>
+                    Teléfono: <small>953442242</small>
                   </p>
                 </div>
       </div>
