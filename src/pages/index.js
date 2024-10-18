@@ -61,7 +61,7 @@ export default function Home() {
     {
       nombre: "C.P.C Javier Villegas ",
       descripcion:
-        "cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
+        "Cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
       img: javier,
     },
 
@@ -139,7 +139,7 @@ export default function Home() {
                 data-aos-duration="1000"
                 className="  text-3xl lg:text-5xl  text-center  font-bold  text-white mb-4  border-b-4 pb-4 px-8 md:px-16  mr-auto ml-auto inline-block border-[#FFB600]"
               >
-                Quienes Somos
+                ¿Quienes Somos?
               </h2>
             </div>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
@@ -151,7 +151,7 @@ export default function Home() {
                   data-aos-delay="300"
                   className=" text-lg mb-4 md:mb-0 md:text-xl  md:text-justify   text-white"
                 >
-                  somos una empresa con mas de 20 años de experiencia en el
+                  Somos una empresa con mas de 20 años de experiencia en el
                   mercado en los servicios de auditoria, outosurcing contable
                   tributario, administrativo y procesamiento de nominas
                   auomatizado. Una firma con experiencia local que pone a su
@@ -325,7 +325,7 @@ export default function Home() {
                 className="shadow-lg p-10  min-h-[350px]  flex  flex-col justify-center max-h-[500px] bg-[#3C3C3A]"
               >
                 <p className=" text-white   text-lg font-semibold mb-3">
-                  CTY Asesoria yConsultoria Empresarial
+                  CTY Asesoria y Consultoria Empresarial
                 </p>
                 <p className=" text-white   text-lg   mb-3">
                   Auditoria, Servicios Contables tributarios y Administrativos
