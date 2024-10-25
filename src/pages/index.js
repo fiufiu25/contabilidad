@@ -199,7 +199,7 @@ export default function Home() {
                 data-aos-delay="300"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
-                className=" relative  flex justify-center  items-center w-[300px]  h-[500px]  md:min-w-[350px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
+                className=" relative  flex justify-center  items-center w-[310px]  h-[500px]  md:min-w-[350px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
@@ -210,7 +210,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="  m-3 px-5 bg-[#45403C]/60 rounded py-10  h-[250px]">
-                  <p className="  text-base text-white font-bold  lg:text-lg text-left mb-2 rounded-sm border-b-2 border-white">
+                  <p style={{ marginTop:index==3?"-24px":null  }} className="  text-base text-white font-bold    lg:text-lg text-left mb-2 rounded-sm border-b-2 border-white">
                     {item.title}
                   </p>
                   <ul className=" ml-3">
@@ -339,14 +339,14 @@ export default function Home() {
                 </p>
                 <div className=" flex  gap-1  items-start mb-4 ">
                   <IoLocation size={20} color="#EF6077" className=" mt-1" />
-                  <p className=" text-white  ">
-                    Direccion: <small> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
+                  <p className=" text-white  font-bold ">
+                    Direccion: <small className=" font-normal text-base"> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
                   </p>
                 </div>
                 <div className=" flex gap-1 items-start mb-1 ">
                   <IoCall size={20} color="#EF6077" />
-                  <p className=" text-white  ">
-                    teléfono: <small>+51 993 735 181</small>
+                  <p className=" text-white font-bold  ">
+                    teléfono: <small className=" font-normal text-base">+51 993 735 181</small>
                   </p>
                 </div>
                 <button className="bg-[#FFB600] w-[80%] ml-auto mr-auto rounded-tl-full  rounded-bl-full rounded-tr-full  rounded-br-full text-lg p-2 rounded-md text-white lg:text-xl font-semibold px-8 mt-5 shadow-sm">
