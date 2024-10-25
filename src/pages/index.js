@@ -264,7 +264,7 @@ export default function Home() {
                 className=" relative shadow-lg  bg-white flex   flex-col  w-[350px]  h-[550px] rounded-md overflow-hidden  px-4 py-6 "
               >
                 <div
-                  style={{ backgroundColor: index % 2 == 0 ? "yellow" : "red" }}
+                  style={{ backgroundColor: index % 2 == 0 ? "#FFB600" : "red" }}
                   className=" bg-sky-950  w-[400px] h-[350px] rounded-full  absolute -left-7   -top-[45%] "
                 />
 
@@ -338,7 +338,7 @@ export default function Home() {
                   Auditoria, Servicios Contables tributarios y Administrativos
                 </p>
                 <div className=" flex  gap-1  items-start mb-4 ">
-                  <IoLocation size={20} color="#EF6077" />
+                  <IoLocation size={20} color="#EF6077" className=" mt-1" />
                   <p className=" text-white  ">
                     Direccion: <small> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
                   </p>
