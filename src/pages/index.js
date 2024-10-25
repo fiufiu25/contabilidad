@@ -2,9 +2,9 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import { IoCall, IoLocation, IoLogoWhatsapp } from "react-icons/io5";
 import UxFooter from "./components/uxFooter";
-import cristian from "../../public/cristian.jpg";
-import javier from "../../public/javier.jpg";
-import evelin from "../../public/evelin.jpg";
+import cristian from "../../public/cristian.png";
+import javier from "../../public/javier.png";
+import evelin from "../../public/evelin.png";
 import eduardo from "../../public/eduardo.png";
 import UxNav from "./components/uxNav";
 import servicio1 from "../../public/servicio1.png";
@@ -119,7 +119,8 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="600"
               data-aos-duration="1500"
-              className="bg-[#E42F1B]  w-[160px] text-lg p-2 md:p-4  rounded-tl-full   rounded-bl-full  rounded-tr-full rounded-br-full text-white lg:text-xl font-semibold  mt-3 shadow-sm"
+              //className="bg-[#E42F1B]  px-40  text-lg  md:p-4 text-center   rounded-tl-full   rounded-bl-full  rounded-tr-full rounded-br-full text-white lg:text-xl font-semibold  mt-3 shadow-sm"
+             className="bg-[#E42F1B] text-white text-base font-semibold  px-16   lg:px-20  py-4  rounded-tl-full   rounded-bl-full my-2  rounded-tr-full rounded-br-full lg:my-10 lg:text-lg"
             >
               Consultar
             </button>
@@ -198,7 +199,7 @@ export default function Home() {
                 data-aos-delay="300"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
-                className=" relative  w-[300px]   md:min-w-[350px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
+                className=" relative  flex justify-center  items-center w-[300px]  h-[500px]  md:min-w-[350px]  overflow-hidden rounded-md  px-2 py-16  md:max-w-[500px]"
               >
                 <div className="absolute top-0 left-0 w-full h-full z-[-1]">
                   <Image
@@ -212,7 +213,7 @@ export default function Home() {
                   <p className="  text-base text-white font-bold  lg:text-lg text-left mb-2 rounded-sm border-b-2 border-white">
                     {item.title}
                   </p>
-                  <ul>
+                  <ul className=" ml-3">
                     <li className=" text-sm  lg:text-base text-white  font-semibold  mb-1 list-disc">
                       {item.descripcion.title1}
                     </li>
@@ -228,7 +229,8 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="  relative w-full h-[400px] lg:h-[700px]   my-10">
+        <section className="  relative w-full h-[400px] lg:h-[700px]  after:absolute after:bg-black/60 after:w-full after:h-full  after:top-0 after:left-0  my-10">
+
         <Image
             src={imagenMedio}
             alt={"servicio"}
@@ -266,8 +268,11 @@ export default function Home() {
                   className=" bg-sky-950  w-[400px] h-[350px] rounded-full  absolute -left-7   -top-[45%] "
                 />
 
-                <div className=" w-full text-center  flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden mb-2">
-                  <Image
+                <div className=" w-full text-center   flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden mb-2">
+                  
+              
+
+                <Image
                     src={item.img} // Ajusta la ruta si es necesario
                     alt="Imagen de contabilidad"
                     // O usa "responsive" si prefieres que se ajuste proporcionalmente
@@ -275,9 +280,11 @@ export default function Home() {
                     // Ajusta el ajuste de la imagen
                     width={160}
                     height={160}
-                    className=" rounded-full w-[160px] h-[160px]"
+                    className=" rounded-full w-[160px] h-[160px]  bg-gray-400 "
                   />
                 </div>
+                 
+                
 
                 <p className="   text-[#3D3C58]  font-bold p-2  text-lg    ">
                   {item.nombre}
@@ -333,13 +340,13 @@ export default function Home() {
                 <div className=" flex  gap-1 items-center mb-4 ">
                   <IoLocation size={20} color="#EF6077" />
                   <p className=" text-white  ">
-                    Direccion: <small> av viena 332 - tinguiña</small>
+                    Direccion: <small> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
                   </p>
                 </div>
                 <div className=" flex gap-1  items-center mb-1 ">
                   <IoCall size={20} color="#EF6077" />
                   <p className=" text-white  ">
-                    teléfono: <small>953442242</small>
+                    teléfono: <small>+51 993 735 181</small>
                   </p>
                 </div>
                 <button className="bg-[#FFB600] w-[80%] ml-auto mr-auto rounded-tl-full  rounded-bl-full rounded-tr-full  rounded-br-full text-lg p-2 rounded-md text-white lg:text-xl font-semibold px-8 mt-5 shadow-sm">
