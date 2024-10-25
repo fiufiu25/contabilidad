@@ -20,7 +20,7 @@ export default function UxFooter() {
       </div>
       <div className='  w-full md:w-auto'>
         <h5 className='mb-2  text-white font-bold text-xl' >Contacto</h5>
-        <div className=" flex  items-center justify-center   md:justify-start   mb-2 ">
+        <div className=" flex  items-start justify-center   md:justify-start   mb-2 ">
                   <IoLocation size={20} color="#EF6077" />
                   <p className=" text-white  ">
                     Direccion: <small>Calle German Schreiber 276 San Isidro, Lima - Perú</small>

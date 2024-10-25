@@ -150,7 +150,7 @@ export default function Home() {
                   data-aos-duration="500"
                   data-aos="zoom-in "
                   data-aos-delay="300"
-                  className=" text-lg mb-4 md:mb-0 md:text-xl  md:text-justify   text-white"
+                  className=" text-lg mb-4 md:mb-2 md:text-xl  md:text-justify   text-white"
                 >
                   Somos una empresa con mas de 20 años de experiencia en el
                   mercado en los servicios de auditoria, outosurcing contable
@@ -337,13 +337,13 @@ export default function Home() {
                 <p className=" text-white   text-lg   mb-3">
                   Auditoria, Servicios Contables tributarios y Administrativos
                 </p>
-                <div className=" flex  gap-1 items-center mb-4 ">
+                <div className=" flex  gap-1  items-start mb-4 ">
                   <IoLocation size={20} color="#EF6077" />
                   <p className=" text-white  ">
                     Direccion: <small> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
                   </p>
                 </div>
-                <div className=" flex gap-1  items-center mb-1 ">
+                <div className=" flex gap-1 items-start mb-1 ">
                   <IoCall size={20} color="#EF6077" />
                   <p className=" text-white  ">
                     teléfono: <small>+51 993 735 181</small>
