@@ -22,7 +22,7 @@ export default function Home() {
       title: "AUDITORIA",
       descripcion: {
         title1: "Auditoría de Estados Financieros",
-        title2: "Procedimientos Acordados de Auditoría y/o Atestiguació",
+        title2: "Procedimientos Acordados de Auditoría y/o Atestiguación",
         title3:
           " Diagnóstico e Implementación de Normas Internacionales de Información Financiera",
       },
@@ -61,7 +61,7 @@ export default function Home() {
     {
       nombre: "C.P.C Javier Villegas ",
       descripcion:
-        "Cuenta con una Maestría en Administración y Finanzas en (UNMS), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
+        "Cuenta con una Maestría en Administración y Finanzas en (UNMSM), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
       img: javier,
     },
 
@@ -155,7 +155,7 @@ export default function Home() {
                   mercado en los servicios de auditoria, outosurcing contable
                   tributario, administrativo y procesamiento de nominas
                   automatizado. Una firma con experiencia local que pone a su
-                  dispoisicion profesionales especializados , conocimiento y
+                  disposicion profesionales especializados , conocimiento y
                   soporte tecnologico.
                 </p>
               </div>
