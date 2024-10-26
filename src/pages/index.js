@@ -154,9 +154,9 @@ export default function Home() {
                   Somos una empresa con mas de 20 años de experiencia en el
                   mercado en los servicios de auditoria, outosurcing contable
                   tributario, administrativo y procesamiento de nominas
-                  auomatizado. Una firma con experiencia local que pone a su
+                  automatizado. Una firma con experiencia local que pone a su
                   dispoisicion profesionales especializados , conocimiento y
-                  soporte teconologico.
+                  soporte tecnologico.
                 </p>
               </div>
               <div
@@ -347,7 +347,7 @@ export default function Home() {
                 <div className=" flex gap-1 items-start mb-1 ">
                   <IoCall size={20} color="#EF6077" />
                   <p className=" text-white font-bold  ">
-                    teléfono:{" "}
+                    Teléfono:{" "}
                     <small className=" font-normal text-base">
                       +51 993 735 181
                     </small>
