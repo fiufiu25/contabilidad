@@ -187,7 +187,7 @@ export default function Home() {
               data-aos-duration="1000"
               className="  text-3xl lg:text-5xl  text-center  font-bold  text-white mb-4  border-b-4 pb-4 px-8 md:px-16  mr-auto ml-auto inline-block border-[#FFB600]"
             >
-              Nuestro Servicios
+              Nuestros Servicios
             </h2>
           </div>
           <div className=" flex    justify-center    2xl:flex-nowrap  flex-wrap gap-5 f mt-14">
