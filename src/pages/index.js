@@ -61,7 +61,7 @@ export default function Home() {
     {
       nombre: "C.P.C Javier Villegas ",
       descripcion:
-        "Cuenta con una Maestría en Administración y Finanzas en (UNMSM), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindado servicios de asesoría y desarrollo empresarial.",
+        "Cuenta con una Maestría en Administración y Finanzas en (UNMSM), un Post Grado en Finanzas (U. Lima), Especialización en Normas Internacionales de Contabilidad (U. Lima), Especialización en Tributación (ESAN) donde obtuvo el primer puesto y cuenta con especialización en Precio de Transferencia (ESAN). Contando con más 20 años de experiencia brindando servicios de asesoría y desarrollo empresarial.",
       img: javier,
     },
 
@@ -139,7 +139,7 @@ export default function Home() {
                 data-aos-duration="1000"
                 className="  text-3xl lg:text-5xl  text-center  font-bold  text-white mb-4  border-b-4 pb-4 px-8 md:px-16  mr-auto ml-auto inline-block border-[#FFB600]"
               >
-                ¿Quienes Somos?
+                ¿Quiénes Somos?
               </h2>
             </div>
             <div className=" flex justify-center flex-wrap  items-center gap-[10%]  ">
@@ -155,8 +155,8 @@ export default function Home() {
                   mercado en los servicios de auditoria, outosurcing contable
                   tributario, administrativo y procesamiento de nominas
                   automatizado. Una firma con experiencia local que pone a su
-                  disposicion profesionales especializados , conocimiento y
-                  soporte tecnologico.
+                  disposición profesionales especializados , conocimiento y
+                  soporte técnologico.
                 </p>
               </div>
               <div

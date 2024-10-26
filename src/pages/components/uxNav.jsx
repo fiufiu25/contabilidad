@@ -28,7 +28,7 @@ export default function UxNav() {
           path: "#inicio",
         },
         {
-          title: "Quienes Somos",
+          title: "Quiénes Somos",
           path: "#quienesSomos",
         },
         {
@@ -41,7 +41,7 @@ export default function UxNav() {
         },
     
         {
-          title: "Conctacto",
+          title: "Contacto",
           path: "#contacto",
         },
       ];
