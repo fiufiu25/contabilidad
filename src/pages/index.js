@@ -105,7 +105,6 @@ export default function Home() {
           {/* Contenedor del contenido */}
           <div className="relative z-10">
             <h1
-            
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1500"
@@ -120,7 +119,7 @@ export default function Home() {
               data-aos-delay="600"
               data-aos-duration="1500"
               //className="bg-[#E42F1B]  px-40  text-lg  md:p-4 text-center   rounded-tl-full   rounded-bl-full  rounded-tr-full rounded-br-full text-white lg:text-xl font-semibold  mt-3 shadow-sm"
-             className="bg-[#E42F1B] text-white text-base font-semibold  px-16   lg:px-20  py-4  rounded-tl-full   rounded-bl-full my-2  rounded-tr-full rounded-br-full lg:my-10 lg:text-lg"
+              className="bg-[#E42F1B] text-white text-base font-semibold  px-16   lg:px-20  py-4  rounded-tl-full   rounded-bl-full my-2  rounded-tr-full rounded-br-full lg:my-10 lg:text-lg"
             >
               Consultar
             </button>
@@ -210,7 +209,10 @@ export default function Home() {
                   />
                 </div>
                 <div className="  m-3 px-5 bg-[#45403C]/60 rounded py-10  h-[250px]">
-                  <p style={{ marginTop:index==3?"-24px":null  }} className="  text-base text-white font-bold    lg:text-lg text-left mb-2 rounded-sm border-b-2 border-white">
+                  <p
+                    style={{ marginTop: index == 3 ? "-24px" : null }}
+                    className="  text-base text-white font-bold    lg:text-lg text-left mb-2 rounded-sm border-b-2 border-white"
+                  >
                     {item.title}
                   </p>
                   <ul className=" ml-3">
@@ -230,14 +232,12 @@ export default function Home() {
           </div>
         </section>
         <section className="  relative w-full h-[400px] lg:h-[700px]  after:absolute after:bg-black/60 after:w-full after:h-full  after:top-0 after:left-0  my-10">
-
-        <Image
+          <Image
             src={imagenMedio}
             alt={"servicio"}
             layout="fill"
             objectFit="cover" // Ajusta el ajuste de la imagen
           />
-       
         </section>
         <section
           className=" bg-[#3C3C3A]  py-16  px-[20px] lg:px-[150px] "
@@ -264,15 +264,14 @@ export default function Home() {
                 className=" relative shadow-lg  bg-white flex   flex-col  w-[350px]  h-[550px] rounded-md overflow-hidden  px-4 py-6 "
               >
                 <div
-                  style={{ backgroundColor: index % 2 == 0 ? "#FFB600" : "red" }}
+                  style={{
+                    backgroundColor: index % 2 == 0 ? "#FFB600" : "red",
+                  }}
                   className=" bg-sky-950  w-[400px] h-[350px] rounded-full  absolute -left-7   -top-[45%] "
                 />
 
                 <div className=" w-full text-center   flex justify-center items-center  h-[160px] relative  p-1 rounded-full overflow-hidden mb-2">
-                  
-              
-
-                <Image
+                  <Image
                     src={item.img} // Ajusta la ruta si es necesario
                     alt="Imagen de contabilidad"
                     // O usa "responsive" si prefieres que se ajuste proporcionalmente
@@ -283,8 +282,6 @@ export default function Home() {
                     className=" rounded-full w-[160px] h-[160px]  bg-gray-400 "
                   />
                 </div>
-                 
-                
 
                 <p className="   text-[#3D3C58]  font-bold p-2  text-lg    ">
                   {item.nombre}
@@ -340,13 +337,20 @@ export default function Home() {
                 <div className=" flex  gap-1  items-start mb-4 ">
                   <IoLocation size={20} color="#EF6077" className=" mt-1" />
                   <p className=" text-white  font-bold ">
-                    Direccion: <small className=" font-normal text-base"> Calle German Schreiber 276 San Isidro, Lima - Perú</small>
+                    Direccion:{" "}
+                    <small className=" font-normal text-base">
+                      {" "}
+                      Calle German Schreiber 276 San Isidro, Lima - Perú
+                    </small>
                   </p>
                 </div>
                 <div className=" flex gap-1 items-start mb-1 ">
                   <IoCall size={20} color="#EF6077" />
                   <p className=" text-white font-bold  ">
-                    teléfono: <small className=" font-normal text-base">+51 993 735 181</small>
+                    teléfono:{" "}
+                    <small className=" font-normal text-base">
+                      +51 993 735 181
+                    </small>
                   </p>
                 </div>
                 <button className="bg-[#FFB600] w-[80%] ml-auto mr-auto rounded-tl-full  rounded-bl-full rounded-tr-full  rounded-br-full text-lg p-2 rounded-md text-white lg:text-xl font-semibold px-8 mt-5 shadow-sm">
@@ -358,11 +362,12 @@ export default function Home() {
                 className=" w-[100%] min-h-[330px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[500px]"
               >
                 <iframe
-                  className=" w-[100%] min-h-[330px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[500px] "
                   width={"100%"}
                   height={"100%"}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.3726100411807!2d-75.73930066116168!3d-14.033110944434963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110fd37e4eae65f%3A0xd60ef56481fbde25!2sFonavi%20San%20Martin%20IV%20Etapa%2C%2011002!5e0!3m2!1ses-419!2spe!4v1726524278790!5m2!1ses-419!2spe"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15604.72211162344!2d-77.0286693!3d-12.0997906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c911c4f64cfb%3A0xd7432189af2e542c!2sC.%20German%20Schreiber%20Gulsmanco%20276%2C%20San%20Isidro%2015047!5e0!3m2!1ses!2spe!4v1729955876544!5m2!1ses!2spe"
+                  className=" w-[100%] min-h-[330px]  max-h-[350px]  lg:min-w-[400px] max-w-[600px] lg:h-[500px] "
                   allowfullscreen=""
+                  loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
